@@ -39,12 +39,12 @@ gem 'jquery-rails'
 # gem 'ruby-debug'
 
 #test gems
-group :test do
-   gem 'rspec-rails'
+group :development, :test do
+  gem 'rspec-rails'
 end
 
 #cucumber gems
-group :cucumer do
+group :cucumber do
    gem 'capybara'
    gem 'database_cleaner'
    gem 'cucumber-rails'
