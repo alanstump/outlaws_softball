@@ -1,5 +1,6 @@
 class HomeController < ApplicationController
   def index
-	@message = 'Welcome to the Outlaws Softball website!'
+    @title = 'Outlaws Softball'
+	  @message = 'Welcome to the Outlaws Softball website!'
   end
 end
