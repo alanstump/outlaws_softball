@@ -1,4 +1,9 @@
 OutlawsSoftball::Application.routes.draw do
+  match "login", :to => "user_sessions#new", :as => "login"
+  match "logout", :to => "user_sessions#destroy", :as => "logout"
+
+  resources :user_sessions
+
   resources :users
 
   get "home/index"
